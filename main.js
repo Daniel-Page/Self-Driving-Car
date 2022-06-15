@@ -15,7 +15,7 @@ function animate() {
     canvas.height = window.innerHeight; // Refreshes drawing and updates height of canvas
     
     ctx.save();
-    ctx.translate(0,-car.y);
+    ctx.translate(0,-car.y + canvas.height*0.7);
 
     road.draw(ctx);
     car.draw(ctx);
